@@ -1,0 +1,17 @@
+{
+  "extends": "./node_modules/@universe-platform/ui-cli/vite/tsconfig.json",
+  "include": [
+    "src"
+  ],
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ],
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
+    
+  }
+}

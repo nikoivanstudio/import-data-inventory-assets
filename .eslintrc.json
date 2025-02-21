@@ -1,0 +1,173 @@
+{
+  "plugins": ["react", "react-hooks"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "rules": {
+    // "react/boolean-prop-naming": "warn",                   // Enforces consistent naming for boolean props
+    // "react/button-has-type": "warn",                       // Disallow usage of `button` elements without an explicit `type` attribute
+    // "react/default-props-match-prop-types": "warn",        // Enforce all defaultProps have a corresponding non-required PropType
+    // "react/destructuring-assignment": "warn",              // Enforce consistent usage of destructuring assignment of props, state, and context
+    "react/display-name": "warn", // Disallow missing displayName in a React component definition
+    // "react/forbid-component-props": "warn",                // Disallow certain props on components
+    // "react/forbid-dom-props": "warn",                      // Disallow certain props on DOM Nodes
+    // "react/forbid-elements": "warn",                       // Disallow certain elements
+    // "react/forbid-foreign-prop-types": "warn",             // Disallow using another component's propTypes
+    // "react/forbid-prop-types": "warn",                     // Disallow certain propTypes
+    // "react/function-component-definition": "warn",         // Enforce a specific function type for function components
+    // "react/hook-use-state": "warn",                        // Ensure destructuring and symmetric naming of useState hook value and setter variables
+    // "react/iframe-missing-sandbox": "warn",                // Enforce sandbox attribute on iframe elements
+    // "react/jsx-boolean-value": "warn",                     // Enforce boolean attributes notation in JSX
+    // "react/jsx-child-element-spacing": "warn",             // Enforce or disallow spaces inside of curly braces in JSX attributes and expressions
+    // "react/jsx-closing-bracket-location": "warn",          // Enforce closing bracket location in JSX
+    // "react/jsx-closing-tag-location": "warn",              // Enforce closing tag location for multiline JSX
+    // "react/jsx-curly-brace-presence": "warn",              // Disallow unnecessary JSX expressions when literals alone are sufficient or enforce JSX expressions on literals in JSX children or attributes
+    // "react/jsx-curly-newline": "warn",                     // Enforce consistent linebreaks in curly braces in JSX attributes and expressions
+    // "react/jsx-curly-spacing": "warn",                     // Enforce or disallow spaces inside of curly braces in JSX attributes and expressions
+    // "react/jsx-equals-spacing": "warn",                    // Enforce or disallow spaces around equal signs in JSX attributes
+    // "react/jsx-filename-extension": "warn",                // Disallow file extensions that may contain JSX
+    // "react/jsx-first-prop-new-line": "warn",               // Enforce proper position of the first property in JSX
+    // "react/jsx-fragments": "warn",                         // Enforce shorthand or standard form for React fragments
+    // "react/jsx-handler-names": "warn",                     // Enforce event handler naming conventions in JSX
+    // "react/jsx-indent": "warn",                            // Enforce JSX indentation
+    // "react/jsx-indent-props": "warn",                      // Enforce props indentation in JSX
+    "react/jsx-key": "warn", // Disallow missing `key` props in iterators/collection literals
+    // "react/jsx-max-depth": "warn",                         // Enforce JSX maximum depth
+    // "react/jsx-max-props-per-line": "warn",                // Enforce maximum of props on a single line in JSX
+    // "react/jsx-newline": "warn",                           // Require or prevent a new line after jsx elements and expressions
+    // "react/jsx-no-bind": "warn",                           // Disallow `.bind()` or arrow functions in JSX props
+    // "react/jsx-no-comment-textnodes": "warn",              // Disallow comments from being inserted as text nodes
+    // "react/jsx-no-constructed-context-values": "warn",     // Disallows JSX context provider values from taking values that will cause needless rerenders
+    // "react/jsx-no-duplicate-props": "warn",                // Disallow duplicate properties in JSX
+    // "react/jsx-no-leaked-render": "warn",                  // Disallow problematic leaked values from being rendered
+    // "react/jsx-no-literals": "warn",                       // Disallow usage of string literals in JSX
+    // "react/jsx-no-script-url": "warn",                     // Disallow usage of `javascript:` URLs
+    "react/jsx-no-target-blank": "warn", // Disallow `target="_blank"` attribute without `rel="noreferrer"`
+    // "react/jsx-no-undef": "warn",                          // Disallow undeclared variables in JSX
+    // "react/jsx-no-useless-fragment": "warn",               // Disallow unnecessary fragments
+    // "react/jsx-one-expression-per-line": "warn",           // Require one JSX element per line
+    // "react/jsx-pascal-case": "warn",                       // Enforce PascalCase for user-defined JSX components
+    // "react/jsx-props-no-multi-spaces": "warn",             // Disallow multiple spaces between inline JSX props
+    // "react/jsx-props-no-spreading": "warn",                // Disallow JSX prop spreading
+    // "react/jsx-sort-default-props": "warn",                // Enforce defaultProps declarations alphabetical sorting
+    // "react/jsx-sort-props": "warn",                        // Enforce props alphabetical sorting
+    // "react/jsx-space-before-closing": "warn",              // Enforce spacing before closing bracket in JSX
+    // "react/jsx-tag-spacing": "warn",                       // Enforce whitespace in and around the JSX opening and closing brackets
+    "react/jsx-uses-react": "error", // Disallow React to be incorrectly marked as unused
+    "react/jsx-uses-vars": "error", // Disallow variables used in JSX to be incorrectly marked as unused
+    // "react/jsx-wrap-multilines": "warn",                   // Disallow missing parentheses around multiline JSX
+    // "react/no-access-state-in-setstate": "warn",           // Disallow when this.state is accessed within setState
+    // "react/no-adjacent-inline-elements": "warn",           // Disallow adjacent inline elements not separated by whitespace
+    // "react/no-array-index-key": "warn",                    // Disallow usage of Array index in keys
+    // "react/no-arrow-function-lifecycle": "warn",           // Lifecycle methods should be methods on the prototype, not class fields
+    // "react/no-children-prop": "warn",                      // Disallow passing of children as props
+    // "react/no-danger": "warn",                             // Disallow usage of dangerous JSX properties
+    // "react/no-danger-with-children": "warn",               // Disallow when a DOM element is using both children and dangerouslySetInnerHTML
+    // "react/no-deprecated": "warn",                         // Disallow usage of deprecated methods
+    // "react/no-did-mount-set-state": "warn",                // Disallow usage of setState in componentDidMount
+    // "react/no-did-update-set-state": "warn",               // Disallow usage of setState in componentDidUpdate
+    // "react/no-direct-mutation-state": "warn",              // Disallow direct mutation of this.state
+    // "react/no-find-dom-node": "warn",                      // Disallow usage of findDOMNode
+    // "react/no-invalid-html-attribute": "warn",             // Disallow usage of invalid attributes
+    // "react/no-is-mounted": "warn",                         // Disallow usage of isMounted
+    // "react/no-multi-comp": "warn",                         // Disallow multiple component definition per file
+    // "react/no-namespace": "warn",                          // Enforce that namespaces are not used in React elements
+    // "react/no-object-type-as-default-prop": "warn",        // Disallow usage of referential-type variables as default param in functional component
+    // "react/no-redundant-should-component-update": "warn",  // Disallow usage of shouldComponentUpdate when extending React.PureComponent
+    // "react/no-render-return-value": "warn",                // Disallow usage of the return value of ReactDOM.render
+    // "react/no-set-state": "warn",                          // Disallow usage of setState
+    // "react/no-string-refs": "warn",                        // Disallow using string references
+    // "react/no-this-in-sfc": "warn",                        // Disallow `this` from being used in stateless functional components
+    // "react/no-typos": "warn",                              // Disallow common typos
+    // "react/no-unescaped-entities": "warn",                 // Disallow unescaped HTML entities from appearing in markup
+    // "react/no-unknown-property": "warn",                   // Disallow usage of unknown DOM property
+    // "react/no-unsafe": "warn",                             // Disallow usage of unsafe lifecycle methods
+    // "react/no-unstable-nested-components": "warn",         // Disallow creating unstable components inside components
+    // "react/no-unused-class-component-methods": "warn",     // Disallow declaring unused methods of component class
+    // "react/no-unused-prop-types": "warn",                  // Disallow definitions of unused propTypes
+    // "react/no-unused-state": "warn",                       // Disallow definitions of unused state
+    // "react/no-will-update-set-state": "warn",              // Disallow usage of setState in componentWillUpdate
+    // "react/prefer-es6-class": "warn",                      // Enforce ES5 or ES6 class for React Components
+    // "react/prefer-exact-props": "warn",                    // Prefer exact proptype definitions
+    // "react/prefer-read-only-props": "warn",                // Enforce that props are read-only
+    // "react/prefer-stateless-function": "warn",             // Enforce stateless components to be written as a pure function
+    // "react/prop-types": "warn",                            // Disallow missing props validation in a React component definition
+    // "react/react-in-jsx-scope": "warn",                    // Disallow missing React when using JSX
+    // "react/require-default-props": "warn",                 // Enforce a defaultProps definition for every prop that is not a required prop
+    // "react/require-optimization": "warn",                  // Enforce React components to have a shouldComponentUpdate method
+    // "react/require-render-return": "warn",                 // Enforce ES5 or ES6 class for returning value in render function
+    // "react/self-closing-comp": "warn",                     // Disallow extra closing tags for components without children
+    // "react/sort-comp": "warn",                             // Enforce component methods order
+    // "react/sort-default-props": "warn",                    // Enforce defaultProps declarations alphabetical sorting
+    // "react/sort-prop-types": "warn",                       // Enforce propTypes declarations alphabetical sorting
+    // "react/state-in-constructor": "warn",                  // Enforce class component state initialization style
+    // "react/static-property-placement": "warn",             // Enforces where React component static properties should be positioned
+    // "react/style-prop-object": "warn",                     // Enforce style prop value is an object
+    // "react/void-dom-elements-no-children": "warn"          // Disallow void DOM elements (e.g. `<img />`, `<br />`) from receiving children
+
+    "import/no-unresolved": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/ban-types": "warn",
+    "@typescript-eslint/ban-ts-comment": "warn",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_"
+      }
+    ]
+  },
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "createClass": "createReactClass", // Regex for Component Factory to use,
+      // default to "createReactClass"
+      "pragma": "React", // Pragma to use, default to "React"
+      "fragment": "Fragment", // Fragment to use (may be a property of <pragma>), default to "Fragment"
+      "version": "detect", // React version. "detect" automatically picks the version you have installed.
+      // You can also use `16.0`, `16.3`, etc, if you want to override the detected value.
+      // It will default to "latest" and warn if missing, and to "detect" in the future
+      "flowVersion": "0.53" // Flow version
+    },
+    "propWrapperFunctions": [
+      // The names of any function used to wrap propTypes, e.g. `forbidExtraProps`. If this isn't set, any propTypes wrapped in a function will be skipped.
+      "forbidExtraProps",
+      { "property": "freeze", "object": "Object" },
+      { "property": "myFavoriteWrapper" },
+      // for rules that check exact prop wrappers
+      { "property": "forbidExtraProps", "exact": true }
+    ],
+    "componentWrapperFunctions": [
+      // The name of any function used to wrap components, e.g. Mobx `observer` function. If this isn't set, components wrapped by these functions will be skipped.
+      "observer", // `property`
+      { "property": "styled" }, // `object` is optional
+      { "property": "observer", "object": "Mobx" },
+      { "property": "observer", "object": "<pragma>" } // sets `object` to whatever value `settings.react.pragma` is set to
+    ],
+    "formComponents": [
+      // Components used as alternatives to <form> for forms, eg. <Form endpoint={ url } />
+      "CustomForm",
+      { "name": "Form", "formAttribute": "endpoint" }
+    ],
+    "linkComponents": [
+      // Components used as alternatives to <a> for linking, eg. <Link to={ url } />
+      "Hyperlink",
+      { "name": "Link", "linkAttribute": "to" }
+    ]
+  }
+}
