@@ -22,7 +22,7 @@
     "@universe-platform/sdk": "^1.9.0",
     "mobx": "^4.15.7"
   },
-  "name": "@disgroup/ue-after-business-roles-assign",
+  "name": "@disgroup/import-data-inventory-assets",
   "version": "0.1.0",
   "description": "",
   "main": "index.js"
